@@ -40,7 +40,8 @@ public class ThirdPersonCamera : MonoBehaviour
         currentX += delta.x * sensitivityX;
         currentY -= delta.y * sensitivityY;
 
-        currentY = Mathf.Clamp(currentY, -40f, 85f); 
+        currentY = Mathf.Clamp(currentY, -30f, 60f); 
+        currentX = Mathf.Clamp(currentX, -90f, 90f); // Clamp the X rotation to prevent flipping
 
         
 
